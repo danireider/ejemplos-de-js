@@ -1,0 +1,37 @@
+import os
+
+# Estructura completa de carpetas y archivos para JavaScript
+structure = {
+    "Basics": {
+        "JS_HOME": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS HOME</title><script src="script.js"></script></head><body><h1>¡Bienvenido a JavaScript!</h1></body></html>',
+            "script.js": 'console.log("¡Aprende JavaScript con nosotros!");'
+        },
+        "JS_Introduction": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Introduction</title><script src="script.js"></script></head><body><p id="demo"></p></body></html>',
+            "script.js": 'document.getElementById("demo").innerHTML = "¡Hola, JavaScript!";'
+        },
+        "JS_Where_To": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Where To</title></head><body><script>alert("¡Hola desde el body!");</script></body></html>',
+            "script.js": '// Este ejemplo no necesita script.js'
+        },
+        "JS_Output": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Output</title><script src="script.js"></script></head><body><p id="output"></p></body></html>',
+            "script.js": 'document.getElementById("output").innerHTML = "Salida de JavaScript";'
+        },
+        "JS_Statements": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Statements</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let x = 5; let y = 10; let z = x + y; console.log(z);'
+        },
+        "JS_Syntax": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Syntax</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function greet() { console.log("¡Hola!"); } greet();'
+        },
+        "JS_Comments": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Comments</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Esto es un comentario\nconsole.log("Comentario ignorado");'
+        },
+        "JS_Variables": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Variables</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'var x = 5; console.log(x);'
+        },
