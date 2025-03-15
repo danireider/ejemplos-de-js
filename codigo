@@ -35,3 +35,18 @@ structure = {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Variables</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'var x = 5; console.log(x);'
         },
+# Crear la carpeta principal
+os.makedirs("JS_Examples", exist_ok=True)
+
+# Crear subcarpetas y archivos
+for category, subtopics in structure.items():
+    category_path = os.path.join("JS_Examples", category)
+    os.makedirs(category_path, exist_ok=True)
+    for subtopic, files in subtopics.items():
+        subtopic_path = os.path.join(category_path, subtopic)
+        os.makedirs(subtopic_path, exist_ok=True)
+        for file_name, content in files.items():
+            with open(os.path.join(subtopic_path, file_name), "w") as f:
+                f.write(content)
+
+print("Carpetas y archivos de JavaScript creados exitosamente.")
