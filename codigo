@@ -35,6 +35,46 @@ structure = {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Variables</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'var x = 5; console.log(x);'
         },
+        "JS_Let": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Let</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let y = 10; console.log(y);'
+        },
+        "JS_Const": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Const</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'const z = 15; console.log(z);'
+        },
+        "JS_Operators": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Operators</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let a = 5 + 3; console.log(a);'
+        },
+        "JS_Arithmetic": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Arithmetic</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let b = 10 - 2; console.log(b);'
+        },
+        "JS_Assignment": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Assignment</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let c = 7; c += 3; console.log(c);'
+        },
+        "JS_Data_Types": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Data Types</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let num = 42; let str = "Hola"; console.log(typeof num, typeof str);'
+        },
+        "JS_Functions": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Functions</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function add(a, b) { return a + b; } console.log(add(2, 3));'
+        },
+        "JS_Objects": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Objects</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let person = { name: "Juan", age: 30 }; console.log(person.name);'
+        },
+        "JS_Events": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Events</title></head><body><button onclick="alert(\'¡Clic!\')">Haz clic</button></body></html>',
+            "script.js": '// Este ejemplo no necesita script.js'
+        },
+        "JS_Strings": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Strings</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let greeting = "Hola, mundo"; console.log(greeting);'
+        },
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
 
