@@ -74,6 +74,37 @@ structure = {
         "JS_Strings": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Strings</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let greeting = "Hola, mundo"; console.log(greeting);'
+        }, "JS_String_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS String Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let str = "JavaScript"; console.log(str.toUpperCase());'
+        },
+        "JS_String_Search": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS String Search</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let text = "Hola, mundo"; console.log(text.indexOf("mundo"));'
+        },
+        "JS_String_Templates": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS String Templates</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let name = "Juan"; console.log(`Hola, ${name}`);'
+        },
+        "JS_Numbers": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Numbers</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let num = 42; console.log(num);'
+        },
+        "JS_BigInt": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS BigInt</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let bigNum = 12345678901234567890n; console.log(bigNum);'
+        },
+        "JS_Number_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Number Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let num = 3.14; console.log(num.toFixed(1));'
+        },
+        "JS_Number_Properties": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Number Properties</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(Number.MAX_VALUE);'
+        },
+        "JS_Arrays": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Arrays</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let fruits = ["Manzana", "Plátano"]; console.log(fruits);'
         },
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
