@@ -138,6 +138,152 @@ structure = {
         "JS_Date_Get_Methods": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Date Get Methods</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let date = new Date(); console.log(date.getFullYear());'
+
+        },"JS_Date_Set_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Date Set Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let date = new Date(); date.setFullYear(2025); console.log(date);'
+        },
+        "JS_Math": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Math</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(Math.PI);'
+        },
+        "JS_Random": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Random</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(Math.random());'
+        },
+        "JS_Booleans": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Booleans</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let isTrue = true; console.log(isTrue);'
+        },
+        "JS_Comparisons": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Comparisons</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(5 > 3);'
+        },
+        "JS_If_Else": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS If Else</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let age = 18; if (age >= 18) { console.log("Mayor de edad"); }'
+        },
+        "JS_Switch": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Switch</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let day = 1; switch (day) { case 1: console.log("Lunes"); break; }'
+        },
+        "JS_Loop_For": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Loop For</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'for (let i = 0; i < 3; i++) { console.log(i); }'
+        },
+        "JS_Loop_For_In": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Loop For In</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let person = {name: "Juan", age: 30}; for (let key in person) { console.log(key); }'
+        },
+        "JS_Loop_For_Of": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Loop For Of</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let arr = [1, 2, 3]; for (let num of arr) { console.log(num); }'
+        },
+        "JS_Loop_While": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Loop While</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let i = 0; while (i < 3) { console.log(i); i++; }'
+        },
+        "JS_Break": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Break</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'for (let i = 0; i < 5; i++) { if (i == 3) break; console.log(i); }'
+        },
+        "JS_Iterables": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Iterables</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let str = "Hola"; for (let char of str) { console.log(char); }'
+        },
+        "JS_Sets": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Sets</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let set = new Set([1, 2, 3]); console.log(set);'
+        },
+        "JS_Maps": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Maps</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let map = new Map(); map.set("key", "value"); console.log(map.get("key"));'
+        },
+        "JS_Typeof": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Typeof</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(typeof 42);'
+        },
+        "JS_Type_Conversion": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Type Conversion</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let numStr = "123"; console.log(Number(numStr));'
+        },
+        "JS_Bitwise": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Bitwise</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(5 & 1);'
+        },
+        "JS_RegExp": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS RegExp</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let pattern = /hello/; console.log(pattern.test("hello world"));'
+        },
+        "JS_Precedence": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Precedence</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(2 + 3 * 4);'
+        },
+        "JS_Errors": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Errors</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'try { throw new Error("Algo salió mal"); } catch (e) { console.log(e.message); }'
+        },
+        "JS_Scope": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Scope</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let globalVar = "global"; function scopeTest() { let localVar = "local"; console.log(globalVar); } scopeTest();'
+        },
+        "JS_Hoisting": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Hoisting</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(hoistedVar); var hoistedVar = "Hola";'
+        },
+        "JS_Strict_Mode": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Strict Mode</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '"use strict"; x = 10; console.log(x);'  # Esto causará un error en modo estricto
+        },
+        "JS_this_Keyword": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS this Keyword</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let obj = { name: "Juan", greet: function() { console.log(this.name); } }; obj.greet();'
+        },
+        "JS_Arrow_Function": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Arrow Function</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let add = (a, b) => a + b; console.log(add(2, 3));'
+        },
+        "JS_Classes": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Classes</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'class Person { constructor(name) { this.name = name; } } let p = new Person("Juan"); console.log(p.name);'
+        },
+        "JS_Modules": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Modules</title><script type="module" src="script.js"></script></head><body></body></html>',
+            "script.js": 'import { myFunction } from "./module.js"; myFunction();'
+        },
+        "JS_JSON": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS JSON</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let json = \'{"name": "Juan", "age": 30}\'; let obj = JSON.parse(json); console.log(obj.name);'
+        },
+        "JS_Debugging": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Debugging</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'debugger; console.log("Punto de interrupción");'
+        },
+        "JS_Style_Guide": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Style Guide</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Usa camelCase para variables\nlet myVariable = 10; console.log(myVariable);'
+        },
+        "JS_Best_Practices": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Best Practices</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Evita variables globales\n(function() { let localVar = "local"; console.log(localVar); })();'
+        },
+        "JS_Mistakes": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Mistakes</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Error común: olvidar var, let o const\nx = 10; console.log(x);'
+        },
+        "JS_Performance": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Performance</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Optimiza bucles\nlet arr = [1, 2, 3]; for (let i = 0, len = arr.length; i < len; i++) { console.log(arr[i]); }'
+        },
+        "JS_Reserved_Words": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Reserved Words</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// No uses palabras reservadas como nombres de variables\nlet varName = "Hola"; console.log(varName);'
+        }
+    },
+    "Objects": {
+        "Object_Definitions": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Definitions</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let car = { brand: "Toyota", model: "Corolla" }; console.log(car);'
         },
         
 # Crear la carpeta principal
