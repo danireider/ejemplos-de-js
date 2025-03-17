@@ -280,10 +280,118 @@ structure = {
             "script.js": '// No uses palabras reservadas como nombres de variables\nlet varName = "Hola"; console.log(varName);'
         }
     },
-    "Objects": {
+     "Objects": {
         "Object_Definitions": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Definitions</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let car = { brand: "Toyota", model: "Corolla" }; console.log(car);'
+        },
+     "Object_Properties": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Properties</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let car = { brand: "Toyota" }; console.log(car.brand);'
+        },
+        "Object_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let car = { start: function() { console.log("Arrancando..."); } }; car.start();'
+        },
+        "Object_Display": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Display</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let car = { brand: "Toyota" }; console.log(JSON.stringify(car));'
+        },
+        "Object_Accessors": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Accessors</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let person = { get name() { return "Juan"; } }; console.log(person.name);'
+        },
+        "Object_Constructors": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Constructors</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function Person(name) { this.name = name; } let p = new Person("Juan"); console.log(p.name);'
+        },
+        "Object_Prototypes": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Prototypes</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function Person(name) { this.name = name; } Person.prototype.greet = function() { console.log("Hola"); }; let p = new Person("Juan"); p.greet();'
+        },
+        "Object_Iterables": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Iterables</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let obj = { a: 1, b: 2 }; for (let key in obj) { console.log(key); }'
+        },
+        "Object_Sets": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Sets</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let set = new Set([1, 2, 3]); console.log(set);'
+        },
+        "Object_Maps": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Maps</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let map = new Map([["key1", "value1"]]); console.log(map.get("key1"));'
+        },
+        "Object_Reference": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Object Reference</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let obj1 = { a: 1 }; let obj2 = obj1; obj2.a = 2; console.log(obj1.a);'
+        }
+    },
+    "Functions": {
+        "Function_Definitions": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Definitions</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function greet() { console.log("Hola"); } greet();'
+        },
+        "Function_Parameters": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Parameters</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function add(a, b) { console.log(a + b); } add(2, 3);'
+        },
+        "Function_Invocation": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Invocation</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let greet = function() { console.log("Hola"); }; greet();'
+        },
+        "Function_Call": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Call</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function greet() { console.log("Hola"); } greet.call();'
+        },
+        "Function_Apply": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Apply</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function add(a, b) { console.log(a + b); } add.apply(null, [2, 3]);'
+        },
+        "Function_Bind": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Bind</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let obj = { name: "Juan" }; function greet() { console.log(this.name); } let boundGreet = greet.bind(obj); boundGreet();'
+        },
+        "Function_Closures": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Function Closures</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function outer() { let x = 10; return function inner() { console.log(x); }; } let closure = outer(); closure();'
+        }
+    },
+    "Classes": {
+        "Class_Intro": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Class Intro</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'class Person { constructor(name) { this.name = name; } } let p = new Person("Juan"); console.log(p.name);'
+        },
+        "Class_Inheritance": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Class Inheritance</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'class Animal { speak() { console.log("Animal habla"); } } class Dog extends Animal { speak() { console.log("Perro ladra"); } } let d = new Dog(); d.speak();'
+        },
+        "Class_Static": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Class Static</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'class MathUtil { static add(a, b) { return a + b; } } console.log(MathUtil.add(2, 3));'
+        }
+    },
+    "Async": {
+        "JS_Callbacks": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Callbacks</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'function greet(callback) { callback(); } greet(() => console.log("Hola"));'
+        },
+        "JS_Asynchronous": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Asynchronous</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'setTimeout(() => console.log("Asíncrono"), 1000);'
+        },
+        "JS_Promises": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Promises</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let promise = new Promise((resolve) => resolve("Hecho")); promise.then(console.log);'
+        },
+        "JS_Async_Await": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Async/Await</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'async function asyncFunc() { await new Promise(resolve => setTimeout(resolve, 1000)); console.log("Esperó"); } asyncFunc();'
+        }
+    },
+    "HTML_DOM": {
+        "DOM_Intro": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Intro</title><script src="script.js"></script></head><body><p id="demo"></p></body></html>',
+            "script.js": 'document.getElementById("demo").innerHTML = "Hola DOM";'
         },
         
 # Crear la carpeta principal
