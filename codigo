@@ -74,6 +74,7 @@ structure = {
         "JS_Strings": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Strings</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let greeting = "Hola, mundo"; console.log(greeting);'
+
         }, "JS_String_Methods": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS String Methods</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let str = "JavaScript"; console.log(str.toUpperCase());'
@@ -105,7 +106,40 @@ structure = {
         "JS_Arrays": {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Arrays</title><script src="script.js"></script></head><body></body></html>',
             "script.js": 'let fruits = ["Manzana", "Plátano"]; console.log(fruits);'
+
+        },"JS_Array_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Array Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let arr = [1, 2, 3]; arr.push(4); console.log(arr);'
         },
+        "JS_Array_Search": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Array Search</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let arr = [1, 2, 3]; console.log(arr.indexOf(2));'
+        },
+        "JS_Array_Sort": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Array Sort</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let arr = [3, 1, 2]; arr.sort(); console.log(arr);'
+        },
+        "JS_Array_Iteration": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Array Iteration</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let arr = [1, 2, 3]; arr.forEach(num => console.log(num));'
+        },
+        "JS_Array_Const": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Array Const</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'const arr = [1, 2, 3]; arr.push(4); console.log(arr);'
+        },
+        "JS_Dates": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Dates</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let date = new Date(); console.log(date);'
+        },
+        "JS_Date_Formats": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Date Formats</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let date = new Date("2023-10-01"); console.log(date);'
+        },
+        "JS_Date_Get_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Date Get Methods</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let date = new Date(); console.log(date.getFullYear());'
+        },
+        
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
 
