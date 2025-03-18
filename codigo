@@ -393,6 +393,46 @@ structure = {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Intro</title><script src="script.js"></script></head><body><p id="demo"></p></body></html>',
             "script.js": 'document.getElementById("demo").innerHTML = "Hola DOM";'
         },
+"DOM_Methods": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Methods</title><script src="script.js"></script></head><body><p id="demo"></p></body></html>',
+            "script.js": 'let element = document.getElementById("demo"); element.innerHTML = "Texto cambiado";'
+        },
+        "DOM_Document": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Document</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(document.title);'
+        },
+        "DOM_Elements": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Elements</title><script src="script.js"></script></head><body><p class="text">Texto</p></body></html>',
+            "script.js": 'let elements = document.getElementsByClassName("text"); console.log(elements[0].innerHTML);'
+        },
+        "DOM_HTML": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM HTML</title><script src="script.js"></script></head><body><p id="demo"></p></body></html>',
+            "script.js": 'document.getElementById("demo").innerHTML = "<b>Negrita</b>";'
+        },
+        "DOM_Forms": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Forms</title><script src="script.js"></script></head><body><form id="myForm"><input type="text" name="fname"></form></body></html>',
+            "script.js": 'let form = document.getElementById("myForm"); console.log(form.elements[0].value);'
+        },
+        "DOM_CSS": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM CSS</title><script src="script.js"></script></head><body><p id="demo">Texto</p></body></html>',
+            "script.js": 'document.getElementById("demo").style.color = "red";'
+        },
+        "DOM_Animations": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Animations</title><script src="script.js"></script></head><body><div id="anim" style="width:100px;height:100px;background:red;"></div></body></html>',
+            "script.js": 'let elem = document.getElementById("anim"); setInterval(() => { elem.style.width = (parseInt(elem.style.width) + 10) + "px"; }, 1000);'
+        },
+        "DOM_Events": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Events</title></head><body><button onclick="alert(\'Clic\')">Haz clic</button></body></html>',
+            "script.js": '// Este ejemplo no necesita script.js'
+        },
+        "DOM_Event_Listener": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Event Listener</title><script src="script.js"></script></head><body><button id="btn">Haz clic</button></body></html>',
+            "script.js": 'document.getElementById("btn").addEventListener("click", () => alert("Clic"));'
+        },
+        "DOM_Navigation": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Navigation</title><script src="script.js"></script></head><body><div><p>Texto</p></div></body></html>',
+            "script.js": 'let div = document.querySelector("div"); console.log(div.firstElementChild.innerHTML);'
+        },
         
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
