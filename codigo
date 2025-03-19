@@ -433,6 +433,88 @@ structure = {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Navigation</title><script src="script.js"></script></head><body><div><p>Texto</p></div></body></html>',
             "script.js": 'let div = document.querySelector("div"); console.log(div.firstElementChild.innerHTML);'
         },
+ "DOM_Nodes": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Nodes</title><script src="script.js"></script></head><body><div id="container"></div></body></html>',
+            "script.js": 'let node = document.createElement("p"); node.innerHTML = "Nuevo nodo"; document.getElementById("container").appendChild(node);'
+        },
+        "DOM_Collections": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Collections</title><script src="script.js"></script></head><body><p>1</p><p>2</p></body></html>',
+            "script.js": 'let paras = document.getElementsByTagName("p"); console.log(paras.length);'
+        },
+        "DOM_Node_Lists": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>DOM Node Lists</title><script src="script.js"></script></head><body><div class="items"><p>1</p><p>2</p></div></body></html>',
+            "script.js": 'let nodeList = document.querySelectorAll(".items p"); console.log(nodeList[0].innerHTML);'
+        }
+    },
+    "Browser_BOM": {
+        "JS_Window": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Window</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(window.innerWidth);'
+        },
+        "JS_Screen": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Screen</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(screen.width);'
+        },
+        "JS_Location": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Location</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(location.href);'
+        },
+        "JS_History": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS History</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(history.length);'
+        },
+        "JS_Navigator": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Navigator</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'console.log(navigator.userAgent);'
+        },
+        "JS_Popup_Alert": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Popup Alert</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'alert("¡Hola!");'
+        },
+        "JS_Timing": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Timing</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'setTimeout(() => console.log("Tiempo"), 2000);'
+        },
+        "JS_Cookies": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Cookies</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'document.cookie = "username=Juan"; console.log(document.cookie);'
+        }
+    },
+    "Web_APIs": {
+        "Web_API_Intro": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web API Intro</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Introducción a APIs web'
+        },
+        "Web_Forms_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web Forms API</title><script src="script.js"></script></head><body><form id="myForm"><input type="text" name="fname"></form></body></html>',
+            "script.js": 'let form = document.getElementById("myForm"); form.addEventListener("submit", (e) => { e.preventDefault(); console.log("Formulario enviado"); });'
+        },
+        "Web_History_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web History API</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'history.pushState({ page: 1 }, "title 1", "?page=1");'
+        },
+        "Web_Storage_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web Storage API</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'localStorage.setItem("key", "value"); console.log(localStorage.getItem("key"));'
+        },
+        "Web_Worker_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web Worker API</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Ejemplo básico de Web Worker'
+        },
+        "Web_Fetch_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web Fetch API</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'fetch("https://api.example.com/data").then(response => response.json()).then(data => console.log(data));'
+        },
+        "Web_Geolocation_API": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Web Geolocation API</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'navigator.geolocation.getCurrentPosition(position => console.log(position.coords.latitude, position.coords.longitude));'
+        }
+    },
+    "AJAX": {
+        "AJAX_Intro": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Intro</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Introducción a AJAX'
+         },
         
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
