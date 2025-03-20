@@ -602,6 +602,33 @@ structure = {
             "script.js": '// Introducción a JSONP'
         }
     },
+ "Graphics": {
+        "JS_Graphics": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Graphics</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Introducción a gráficos en JS'
+        },
+        "JS_Canvas": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Canvas</title><script src="script.js"></script></head><body><canvas id="myCanvas"></canvas></body></html>',
+            "script.js": 'let canvas = document.getElementById("myCanvas"); let ctx = canvas.getContext("2d"); ctx.fillStyle = "red"; ctx.fillRect(10, 10, 50, 50);'
+        },
+        "JS_Plotly": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Plotly</title><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><script src="script.js"></script></head><body><div id="plot"></div></body></html>',
+            "script.js": 'Plotly.newPlot("plot", [{ x: [1, 2, 3], y: [2, 4, 6] }]);'
+        },
+        "JS_Chart_js": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Chart.js</title><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script src="script.js"></script></head><body><canvas id="myChart"></canvas></body></html>',
+            "script.js": 'let ctx = document.getElementById("myChart").getContext("2d"); new Chart(ctx, { type: "bar", data: { labels: ["A", "B"], datasets: [{ data: [1, 2] }] } });'
+        },
+        "JS_Google_Chart": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS Google Chart</title><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><script src="script.js"></script></head><body><div id="chart_div"></div></body></html>',
+            "script.js": 'google.charts.load("current", {packages:["corechart"]}); google.charts.setOnLoadCallback(() => { let data = google.visualization.arrayToDataTable([ ["Task", "Hours"], ["Work", 11] ]); let chart = new google.visualization.PieChart(document.getElementById("chart_div")); chart.draw(data); });'
+        },
+        "JS_D3_js": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JS D3.js</title><script src="https://d3js.org/d3.v7.min.js"></script><script src="script.js"></script></head><body><svg id="chart"></svg></body></html>',
+            "script.js": 'd3.select("#chart").append("circle").attr("cx", 50).attr("cy", 50).attr("r", 40).style("fill", "blue");'
+        }
+    }
+}
         
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
