@@ -515,6 +515,93 @@ structure = {
             "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Intro</title><script src="script.js"></script></head><body></body></html>',
             "script.js": '// Introducción a AJAX'
          },
+ },
+        "AJAX_XMLHttp": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX XMLHttp</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let xhr = new XMLHttpRequest(); xhr.open("GET", "data.txt", true); xhr.send();'
+        },
+        "AJAX_Request": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Request</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let xhr = new XMLHttpRequest(); xhr.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { console.log(this.responseText); } }; xhr.open("GET", "data.txt", true); xhr.send();'
+        },
+        "AJAX_Response": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Response</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Similar a AJAX_Request'
+        },
+        "AJAX_XML_File": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX XML File</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let xhr = new XMLHttpRequest(); xhr.open("GET", "data.xml", true); xhr.send();'
+        },
+        "AJAX_PHP": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX PHP</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let xhr = new XMLHttpRequest(); xhr.open("GET", "script.php", true); xhr.send();'
+        },
+        "AJAX_ASP": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX ASP</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let xhr = new XMLHttpRequest(); xhr.open("GET", "script.asp", true); xhr.send();'
+        },
+        "AJAX_Database": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Database</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Ejemplo de conexión a base de datos con AJAX'
+        },
+        "AJAX_Applications": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Applications</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Aplicaciones comunes de AJAX'
+        },
+        "AJAX_Examples": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>AJAX Examples</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Ejemplos prácticos de AJAX'
+    },
+    "JSON": {
+        "JSON_Intro": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Intro</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Introducción a JSON'
+        },
+        "JSON_Syntax": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Syntax</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let json = \'{"name": "Juan", "age": 30}\'; console.log(json);'
+        },
+        "JSON_vs_XML": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON vs XML</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Comparación entre JSON y XML'
+        },
+        "JSON_Data_Types": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Data Types</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Tipos de datos en JSON'
+        },
+        "JSON_Parse": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Parse</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let json = \'{"name": "Juan"}\'; let obj = JSON.parse(json); console.log(obj.name);'
+        },
+        "JSON_Stringify": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Stringify</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let obj = { name: "Juan" }; let json = JSON.stringify(obj); console.log(json);'
+        },
+        "JSON_Objects": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Objects</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Objetos en JSON'
+        },
+        "JSON_Arrays": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Arrays</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": 'let json = \'[1, 2, 3]\'; let arr = JSON.parse(json); console.log(arr[0]);'
+        },
+        "JSON_Server": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON Server</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Uso de JSON en servidores'
+        },
+        "JSON_PHP": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON PHP</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Interacción entre JSON y PHP'
+        },
+        "JSON_HTML": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON HTML</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Uso de JSON en HTML'
+        },
+        "JSON_JSONP": {
+            "index.html": '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>JSON JSONP</title><script src="script.js"></script></head><body></body></html>',
+            "script.js": '// Introducción a JSONP'
+        }
+    },
         
 # Crear la carpeta principal
 os.makedirs("JS_Examples", exist_ok=True)
